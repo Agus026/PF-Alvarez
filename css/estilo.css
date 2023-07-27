@@ -37,13 +37,16 @@ header {
 body {
     background-color:#e8e8e8 ;
 }
-.tituloProducto {
+ 
+.titulos{
     background-color: rgb(33, 33, 124);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #fff;
     text-align: center;
     margin-top: 1rem;
 }
 .contenedorImagen img {
+    object-fit: cover;
     width: 100%;
     height: 23rem;
     margin: 0px;
@@ -53,4 +56,27 @@ body {
 
 .container-fluid {
     --bs-gutter-x: 0px;
+}
+/* Productos */
+
+
+.cards {
+    size: 7rem;
+    border: none;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+ .colorBtn {
+    background-color: rgb(33, 33, 124) ;
+    color: #fff;
+}
+
+
+/*Footer*/
+
+footer {
+    color: gray;
+    background-color: #162631;
+    text-align: center;
+    display: flex;
 }
