@@ -72,13 +72,21 @@ body {
 .cards {
     width: 25rem;
     height: 40rem;
+    padding: 0%;
     border: none;
     align-items: center;
     box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, 0.3);
-    display: grid;
+    display: flex;
+}
+.colorBtn {    
+    align-items: center;    
+    cursor: pointer;
+    background-color: rgb(33, 33, 124);
+    color: #fff;    
 }
 
-.colorBtn {
+fieldset .colorBtn {
+    align-items: center;
     width: 20%;
     cursor: pointer;
     background-color: rgb(33, 33, 124);
@@ -87,11 +95,13 @@ body {
 }
 
 .cards .colorBtn {
+    text-align: center;
     width: 12rem;
     cursor: pointer;
     background-color: rgb(33, 33, 124);
     color: #fff;
-
+    align-items: center;
+    
 }
 
 /* Videos */
