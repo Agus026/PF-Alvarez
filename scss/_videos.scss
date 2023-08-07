@@ -1,0 +1,28 @@
+.contenedorVideos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .video {
+        height: 15rem;
+        width: 25rem;
+        margin: 2rem;
+        box-shadow: 0 .5rem .1rem rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        border-radius: 1rem;
+
+        iframe {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            outline: none;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                transition: .2s linear;
+                transform: scale(1.5rem);
+            }
+        }
+    }
+}

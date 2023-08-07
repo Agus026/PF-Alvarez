@@ -25,71 +25,6 @@ header .navbar li a {
   width: 25%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #e8e8e8;
-}
-
-.titulos {
-  background-color: rgb(33, 33, 124);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #fff;
-  text-align: center;
-  margin-top: 1rem;
-  text-shadow: 0 0.3rem 0.5rem rgb(0, 0, 0);
-}
-
-.contenedorImagen img {
-  object-fit: cover;
-  width: 100%;
-  height: 23rem;
-  margin: 0px;
-  padding: 0px;
-  border-bottom: #000 solid 1.5px;
-}
-
-.container-fluid {
-  --bs-gutter-x: 0px;
-}
-
-.cards {
-  width: 25rem;
-  height: 40rem;
-  padding: 0%;
-  border: none;
-  align-items: center;
-  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
-  display: flex;
-}
-.cards .colorBtn {
-  text-align: center;
-  width: 12rem;
-  cursor: pointer;
-  background-color: rgb(33, 33, 124);
-  color: #fff;
-  align-items: center;
-}
-
-.colorBtn {
-  align-items: center;
-  cursor: pointer;
-  background-color: rgb(33, 33, 124);
-  color: #fff;
-}
-
-fieldset .colorBtn {
-  align-items: center;
-  width: 20%;
-  cursor: pointer;
-  background-color: rgb(33, 33, 124);
-  color: #fff;
-  margin: 3rem 40% 3rem 40%;
-}
-
 .contenedorVideos {
   display: flex;
   justify-content: center;
@@ -114,6 +49,61 @@ fieldset .colorBtn {
 .contenedorVideos .video iframe:hover {
   transition: 0.2s linear;
   transform: scale(1.5rem);
+}
+
+body {
+  background-color: #e8e8e8;
+}
+body .titulos {
+  background-color: rgb(33, 33, 124);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+  text-shadow: 0 0.3rem 0.5rem rgb(0, 0, 0);
+}
+body .contenedorImagen img {
+  object-fit: cover;
+  width: 100%;
+  height: 23rem;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: #000 solid 1.5px;
+}
+body .container-fluid {
+  --bs-gutter-x: 0px;
+}
+
+.row .cards {
+  width: 25rem;
+  height: 40rem;
+  padding: 0%;
+  border: none;
+  align-items: center;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+.row .cards .colorBtn {
+  text-align: center;
+  width: 12rem;
+  cursor: pointer;
+  background-color: rgb(33, 33, 124);
+  color: #fff;
+  align-items: center;
+}
+
+fieldset .colorBtn {
+  align-items: center;
+  width: 20%;
+  cursor: pointer;
+  background-color: rgb(33, 33, 124);
+  color: #fff;
+  margin: 3rem 40% 3rem 40%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 footer {
