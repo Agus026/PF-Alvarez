@@ -10,6 +10,7 @@ $background-color_1: rgb(33, 33, 124);
 		align-items: center;
 		box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, 0.3);
 		display: flex;
+
 		.colorBtn {
 			text-align: center;
 			width: 12rem;
@@ -18,7 +19,14 @@ $background-color_1: rgb(33, 33, 124);
 			color: $color_1;
 			align-items: center;
 		}
-	}
-	
-}
 
+		.productoImagen {
+			width: 19rem;
+			height: 21rem;
+
+			border-radius: .5rem;
+			margin-bottom: 1rem;
+		}
+	}
+
+}
