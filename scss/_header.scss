@@ -1,9 +1,7 @@
 $color_1: #fff;
 $color_2: #000;
-$background-color_1: rgb(44, 44, 209);
-
 header {
-	background-color: $background-color_1;
+	background-color: $color-ramp;
 	border-bottom: 1.5px solid black;
 	.fuentes {
 		font-size: 1.5rem;
@@ -18,20 +16,25 @@ header {
 		}
 	}
 	.navbar {
-		li {
-			a {
-				color: $color_1;
-				display: block;
-				cursor: pointer;
-				margin: auto;
-				text-decoration: none;
-				text-align: center;
-				color: $color_2;
-				transition: .3s ease-out all;
+		nav {
+			justify-content: right;
+			li {
+				a {
+					color: $color_1;
+					display: block;
+					cursor: pointer;
+					margin: auto;				
+					text-decoration: none;
+					text-align: center;
+					color: $color_2;
+					transition: .3s ease-out all;
+				}
 			}
+			
 		}
+		 
 	}
 }
 .logo {
-	width: 25%;
+	width:10rem;
 }

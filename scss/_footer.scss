@@ -1,0 +1,61 @@
+footer {
+    width: 100%;
+    
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    color: $color_3;
+    background-color: $background-color_4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .logoFooter {
+        width: 8rem;
+        margin-bottom: 1rem;
+    }
+
+    .contenedorIconos,
+    .footerMenuContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+    .footerMenuContainer {
+        list-style-type: none;
+        color: #fafafa;
+
+    }
+
+    .contenedorIconos {
+        .iconos {
+            height: 80px;
+            width: 80px;
+            border-radius: 50px;
+            border-radius: solid $color-ramp 1px;
+            background-image: url(../img/descarga.png);
+            background-position:center ; 
+            background-size:40% ;
+            background-repeat: no-repeat;
+            margin: 1rem;
+        }
+        .iconos:hover {
+            background-color: #121212;
+            filter: invert(1);
+        }
+        .iconos:nth-of-type(2) {
+            background-image: url(../img/instagram.png);
+        }
+    }
+    .menuItem {
+        margin: 1rem;
+        cursor: pointer;
+        opacity: .5;
+    }
+    .menuItem:hover {
+        opacity: 1;
+    }
+}

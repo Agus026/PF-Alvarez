@@ -1,5 +1,5 @@
 header {
-  background-color: rgb(44, 44, 209);
+  background-color: #171F95;
   border-bottom: 1.5px solid black;
 }
 header .fuentes {
@@ -10,7 +10,10 @@ header .fuentes li a:hover {
   color: #fff;
   text-decoration: none;
 }
-header .navbar li a {
+header .navbar nav {
+  justify-content: right;
+}
+header .navbar nav li a {
   color: #fff;
   display: block;
   cursor: pointer;
@@ -22,7 +25,7 @@ header .navbar li a {
 }
 
 .logo {
-  width: 25%;
+  width: 10rem;
 }
 
 .contenedorVideos {
@@ -73,9 +76,13 @@ body .contenedorImagen img {
 body .container-fluid {
   --bs-gutter-x: 0px;
 }
+body p {
+  text-align: center;
+}
 
 .row .cards {
-  width: 25rem;
+  margin-left: 1rem;
+  width: 22rem;
   height: 40rem;
   padding: 0%;
   border: none;
@@ -91,8 +98,11 @@ body .container-fluid {
   color: #fff;
   align-items: center;
 }
+.row .cards .colorBtn:hover {
+  transform: translate(3px, 5px);
+}
 .row .cards .productoImagen {
-  width: 19rem;
+  width: 90%;
   height: 21rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
@@ -106,20 +116,68 @@ fieldset .colorBtn {
   color: #fff;
   margin: 3rem 40% 3rem 40%;
 }
-
-* {
-  margin: 0;
-  padding: 0;
+fieldset .colorBtn:hover {
+  transform: translate(3px, 5px);
 }
 
 footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
   color: gray;
   background-color: #162631;
-  text-align: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-footer li {
-  display: inline-block;
+footer .logoFooter {
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+footer .contenedorIconos,
+footer .footerMenuContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+footer .footerMenuContainer {
+  list-style-type: none;
+  color: #fafafa;
+}
+footer .contenedorIconos .iconos {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  border-radius: solid #171F95 1px;
+  background-image: url(../img/descarga.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+footer .contenedorIconos .iconos:hover {
+  background-color: #121212;
+  filter: invert(1);
+}
+footer .contenedorIconos .iconos:nth-of-type(2) {
+  background-image: url(../img/instagram.png);
+}
+footer .menuItem {
+  margin: 1rem;
+  cursor: pointer;
+  opacity: 0.5;
+}
+footer .menuItem:hover {
+  opacity: 1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=estilo.css.map */

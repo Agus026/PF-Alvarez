@@ -3,7 +3,8 @@ $background-color_1: rgb(33, 33, 124);
 
 .row {
 	.cards {
-		width: 25rem;
+		margin-left: 1rem;			
+		width: 22rem;
 		height: 40rem;
 		padding: 0%;
 		border: none;
@@ -19,9 +20,12 @@ $background-color_1: rgb(33, 33, 124);
 			color: $color_1;
 			align-items: center;
 		}
+		.colorBtn:hover {			
+			transform: translate(3px, 5px);
+		}
 
 		.productoImagen {
-			width: 19rem;
+			width: 90%;
 			height: 21rem;
 
 			border-radius: .5rem;

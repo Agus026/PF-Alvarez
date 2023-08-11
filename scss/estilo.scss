@@ -1,31 +1,12 @@
-$color_1: #fff;
-$color_2: #000;
-$color_3: gray;
-$font-family_1: Georgia, 'Times New Roman', Times, serif;
-$background-color_1: rgb(44, 44, 209);
-$background-color_2: #e8e8e8;
-$background-color_3: rgb(33, 33, 124);
-$background-color_4: #162631;
-
-
+@import "variables";
 @import "header";
 @import "videos";
 @import "body";
 @import "productos";
 @import "formulario";
+@import "footer";
 
 * {
-	margin: 0;
 	padding: 0;
-}
-
-footer {
-	color: $color_3;
-	background-color: $background-color_4;
-	text-align: center;
-	display: flex;
-
-	li {
-		display: inline-block;
-	}
+	margin: 0;
 }
