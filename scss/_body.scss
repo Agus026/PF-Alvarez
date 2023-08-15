@@ -5,6 +5,7 @@ $background-color_2: rgb(33, 33, 124);
 
 body {
 	background-color: $background-color_1;
+	padding: 0;
 
 	.titulos {
 		background-color: $background-color_2;
@@ -27,10 +28,27 @@ body {
 	}
 
 	.container-fluid {
-		--bs-gutter-x: 0px;
+		padding: 0;
+		--bs-gutter-x: 0rem;
 	}
+
 	p {
 		text-align: center;
 	}
-	
+
+	.contenedorMapa {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: 3fr 1fr;
+		border-bottom: black solid 2px;
+		div {
+			background-color: #7D81B5;
+		}
+		.titulos {
+			margin-top: 0;
+		}
+		.mapa {
+			border-radius: 3px;
+		}
+	}
 }

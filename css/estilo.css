@@ -56,6 +56,7 @@ header .navbar nav li a {
 
 body {
   background-color: #e8e8e8;
+  padding: 0;
 }
 body .titulos {
   background-color: rgb(33, 33, 124);
@@ -74,10 +75,26 @@ body .contenedorImagen img {
   border-bottom: #000 solid 1.5px;
 }
 body .container-fluid {
-  --bs-gutter-x: 0px;
+  padding: 0;
+  --bs-gutter-x: 0rem;
 }
 body p {
   text-align: center;
+}
+body .contenedorMapa {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 3fr 1fr;
+  border-bottom: black solid 2px;
+}
+body .contenedorMapa div {
+  background-color: #7D81B5;
+}
+body .contenedorMapa .titulos {
+  margin-top: 0;
+}
+body .contenedorMapa .mapa {
+  border-radius: 3px;
 }
 
 .row .cards {
@@ -175,9 +192,14 @@ footer .menuItem:hover {
   opacity: 1;
 }
 
+@media (max-width: 408px) {
+  .row .cards {
+    width: 17rem;
+  }
+}
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=estilo.css.map */
