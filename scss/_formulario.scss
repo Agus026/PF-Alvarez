@@ -6,6 +6,7 @@ fieldset {
 		background-color: $background-color_3;
 		color: $color_1;
 		margin: 3rem 40% 3rem 40%;
+		text-overflow: clip;
 	}
 	.colorBtn:hover {
 		transform: translate(3px, 5px);

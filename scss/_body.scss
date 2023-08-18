@@ -5,7 +5,7 @@ $background-color_2: rgb(33, 33, 124);
 
 body {
 	background-color: $background-color_1;
-	padding: 0;
+
 
 	.titulos {
 		background-color: $background-color_2;
@@ -17,10 +17,11 @@ body {
 	}
 
 	.contenedorImagen {
+		height: 22rem;
 		img {
 			object-fit: cover;
 			width: 100%;
-			height: 23rem;
+			height: 22rem;
 			margin: 0px;
 			padding: 0px;
 			border-bottom: #000 solid 1.5px;
@@ -38,15 +39,18 @@ body {
 
 	.contenedorMapa {
 		display: grid;
-		grid-template-columns: 1fr 2fr;
-		
+		grid-template-columns: 1fr 1fr;
+
 		border-bottom: black solid 2px;
+
 		div {
 			background-color: #7D81B5;
 		}
+
 		.titulos {
 			margin-top: 0;
 		}
+
 		.mapa {
 			border-radius: 3px;
 		}

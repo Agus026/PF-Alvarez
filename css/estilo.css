@@ -56,7 +56,6 @@ header .navbar nav li a {
 
 body {
   background-color: #e8e8e8;
-  padding: 0;
 }
 body .titulos {
   background-color: rgb(33, 33, 124);
@@ -66,10 +65,13 @@ body .titulos {
   margin-top: 1rem;
   text-shadow: 0 0.3rem 0.5rem rgb(0, 0, 0);
 }
+body .contenedorImagen {
+  height: 22rem;
+}
 body .contenedorImagen img {
   object-fit: cover;
   width: 100%;
-  height: 23rem;
+  height: 22rem;
   margin: 0px;
   padding: 0px;
   border-bottom: #000 solid 1.5px;
@@ -83,7 +85,7 @@ body p {
 }
 body .contenedorMapa {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   border-bottom: black solid 2px;
 }
 body .contenedorMapa div {
@@ -96,8 +98,25 @@ body .contenedorMapa .mapa {
   border-radius: 3px;
 }
 
+main .contenedorEquipo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .contenedorEquipo .contenedorImagen img {
+  object-fit: cover;
+  width: 100%;
+  height: 12rem;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: #000 solid 1.5px;
+}
+main .textoActividades {
+  background-color: #7D81B5;
+  text-align: center;
+}
+
 .row .cards {
-  margin-left: 1rem;
+  margin: auto;
   width: 22rem;
   height: 40rem;
   padding: 0%;
@@ -131,6 +150,7 @@ fieldset .colorBtn {
   background-color: rgb(33, 33, 124);
   color: #fff;
   margin: 3rem 40% 3rem 40%;
+  text-overflow: clip;
 }
 fieldset .colorBtn:hover {
   transform: translate(3px, 5px);
@@ -194,6 +214,13 @@ footer .menuItem:hover {
 @media (max-width: 408px) {
   .row .cards {
     width: 17rem;
+  }
+}
+@media (max-width: 800px) {
+  main .contenedorMapa {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 * {

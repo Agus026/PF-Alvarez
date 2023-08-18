@@ -1,5 +1,13 @@
-@media ( max-width :408px) {
+@media (max-width :408px) {
     .row .cards {
         width: 17rem;
+    }
+}
+
+@media (max-width : 800px) {
+    main .contenedorMapa {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
